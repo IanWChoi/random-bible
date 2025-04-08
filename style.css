@@ -24,4 +24,19 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
+  footer {
+    text-align: right;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+    padding-right: 1rem;
+  }
   
