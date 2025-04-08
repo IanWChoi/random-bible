@@ -24,4 +24,8 @@ function showRandomChapter() {
   html += "</ul>";
 
   outputDiv.innerHTML = html;
+
+  // footer 보이게 만들기
+  const footer = document.getElementById("footer");
+  footer.classList.add("visible");
 }
