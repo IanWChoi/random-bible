@@ -58,3 +58,12 @@ button {
 #footer.visible {
   display: block;
 }
+
+.footer-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
