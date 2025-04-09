@@ -11,6 +11,12 @@ body {
   margin: auto;
 }
 
+.emoji-box {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -26,11 +32,9 @@ button {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-/* 응원 메시지 스타일 */
 #encouragement {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
-  width: 100%;
 }
 
 .encouragement {
@@ -38,7 +42,6 @@ button {
   color: gray;
   font-style: italic;
 }
-
 
 /* footer 관련 스타일 */
 .footer-text {
@@ -49,6 +52,15 @@ button {
   text-align: right;
 }
 
+.footer-link {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 #footer {
   width: 100%;
   margin-top: 3rem;
@@ -57,13 +69,4 @@ button {
 
 #footer.visible {
   display: block;
-}
-
-.footer-link {
-  color: gray;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
 }

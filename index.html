@@ -6,28 +6,30 @@
   <title>랜덤 성경 한 장</title>
   <link rel="stylesheet" href="style.css" />
 
+  <!-- 소셜 공유용 메타태그 -->
   <meta property="og:title" content="랜덤 성경 한 장" />
   <meta property="og:description" content="버튼을 눌러 말씀과 응원을 받아보세요." />
   <meta property="og:url" content="https://IanWChoi.github.io/random-bible/" />
   <meta property="og:type" content="website" />
-
 </head>
 <body>
   <div class="container">
-    <h1>📖 랜덤 성경 한 장</h1>
+    <h1>
+      <span id="emoji">📖</span> 랜덤 성경 한 장
+    </h1>
+
     <button onclick="showRandomChapter()">한 장 보기</button>
 
-    <div id="output"></div>          <!-- 성경 장 출력 영역 -->
-    
+    <div id="output"></div>          
   </div>
-    <div id="encouragement"></div>   <!-- 응원 메시지 출력 영역 -->
 
-    <footer id="footer" class="hidden">
-      <p class="footer-text">
-        made by <a href="https://github.com/IanWChoi/random-bible" target="_blank" class="footer-link">Wooseok Choi</a>
-      </p>
-    </footer>
-    
+  <div id="encouragement"></div>
+
+  <footer id="footer" class="hidden">
+    <p class="footer-text">
+      made by <a href="https://github.com/IanWChoi/random-bible" target="_blank" class="footer-link">Wooseok Choi</a>
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

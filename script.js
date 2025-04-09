@@ -1,14 +1,15 @@
 let bibleData = {};
 let messages = [];
 
-// 성경 데이터 로딩
+// 📖 랜덤 이모지 리스트
+const emojiList = ["📖", "🕊️", "🌿", "☁️", "✨", "🙏", "🌼", "🌙", "💡", "🌤️"];
+
 fetch("full_bible.json")
   .then(response => response.json())
   .then(data => {
     bibleData = data;
   });
 
-// 응원 메시지 데이터 로딩
 fetch("messages.json")
   .then(response => response.json())
   .then(data => {
@@ -16,17 +17,14 @@ fetch("messages.json")
   });
 
 function showRandomChapter() {
-  // 랜덤 책 선택
+  // 랜덤 성경 장 선택
   const books = Object.keys(bibleData);
   const book = books[Math.floor(Math.random() * books.length)];
-
-  // 랜덤 장 선택
   const chapters = Object.keys(bibleData[book]);
   const chapter = chapters[Math.floor(Math.random() * chapters.length)];
-
   const verses = bibleData[book][chapter];
 
-  // 성경 구절 출력
+  // 성경 말씀 출력
   const outputDiv = document.getElementById("output");
   let html = `<h2>${book} ${chapter}장</h2>`;
   html += "<ul>";
@@ -43,7 +41,11 @@ function showRandomChapter() {
     encouragementDiv.innerHTML = `<p class="encouragement">${message}</p>`;
   }
 
-  // footer 보이게
+  // 랜덤 이모지 바꾸기
+  const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
+  document.getElementById("emoji").textContent = randomEmoji;
+
+  // footer 표시
   const footer = document.getElementById("footer");
   footer.classList.add("visible");
 }
