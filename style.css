@@ -85,3 +85,46 @@ button {
 #footer.visible {
   display: block;
 }
+
+.easter-egg {
+  font-size: 12px;
+  color: #f4f4f4;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.easter-egg a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.easter-egg a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+textarea {
+  width: 90%;
+  max-width: 500px;
+  height: 60px; /* 2줄 정도 */
+  font-size: 14px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  background-color: #fafafa;
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 6px 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#prayer-intro {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}

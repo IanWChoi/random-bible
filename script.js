@@ -47,7 +47,23 @@ function showRandomChapter() {
 
   // 소개문 숨기기
   document.getElementById("intro").style.display = "none";
+  // ✅ 이스터에그 링크가 아직 없다면, 새로 만들어 붙이기
+  if (!document.getElementById("easter-egg")) {
+    const linkContainer = document.createElement("p");
+    linkContainer.id = "easter-egg";
+    linkContainer.className = "easter-egg";
+    
+    const link = document.createElement("a");
+    link.href = "prayer.html";
+    link.target = "_blank";
+    link.innerText = "기도하러 가기";
 
+    linkContainer.appendChild(link);
+
+    // encouragement div 바로 뒤에 추가
+    const encouragementDiv = document.getElementById("encouragement");
+    encouragementDiv.parentNode.insertBefore(linkContainer, encouragementDiv.nextSibling);
+  }
   // footer 보이기
   document.getElementById("footer").classList.add("visible");
 }
