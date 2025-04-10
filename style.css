@@ -93,7 +93,7 @@ button {
 }
 
 .easter-egg a {
-  color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.05);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -128,3 +128,4 @@ button {
   color: #444;
   line-height: 1.6;
 }
+
