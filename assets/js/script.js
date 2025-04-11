@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     verseButton.addEventListener("click", () => {
       clickCount++;
 
-      if (clickCount >= 5) {
+      if (clickCount >= 6) {
         alert("주님의 말씀을 천천히 음미하시기를 추천합니다 🙏");
         clickCount = 0;
         clearTimeout(clickTimer);
