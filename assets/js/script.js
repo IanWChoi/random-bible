@@ -5,13 +5,13 @@ let messages = [];
 const emojiList = ["📖", "🕊️", "🌿", "☁️", "✨", "🙏", "🌼", "🌙", "💡", "🌤️"];
 
 // 데이터 로딩
-fetch("full_bible.json")
+fetch('assets/data/full_bible.json')
   .then(response => response.json())
   .then(data => {
     bibleData = data;
   });
 
-fetch("messages.json")
+  fetch('assets/data/messages.json')
   .then(response => response.json())
   .then(data => {
     messages = data;
