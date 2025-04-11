@@ -67,3 +67,32 @@ function showRandomChapter() {
   // footer 보이기
   document.getElementById("footer").classList.add("visible");
 }
+
+// 빠른 클릭 이스터에그
+let clickCount = 0;
+let clickTimer = null;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const verseButton = document.getElementById("verse-button");
+
+  if (verseButton) {
+    verseButton.addEventListener("click", () => {
+      clickCount++;
+
+      if (clickCount >= 5) {
+        alert("주님의 말씀을 천천히 음미하시기를 추천합니다 🙏");
+        clickCount = 0;
+        clearTimeout(clickTimer);
+        clickTimer = null;
+        return;
+      }
+
+      if (!clickTimer) {
+        clickTimer = setTimeout(() => {
+          clickCount = 0;
+          clickTimer = null;
+        }, 3000); // 3초 이내 클릭만 집계
+      }
+    });
+  }
+});
