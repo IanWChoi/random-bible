@@ -129,3 +129,20 @@ button {
   line-height: 1.6;
 }
 
+@keyframes fadeInBreath {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.breathing-text {
+  animation: fadeInBreath 1.5s ease-out;
+}

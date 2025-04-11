@@ -32,7 +32,7 @@ function showRandomChapter() {
     html += `<li><strong>${verseNum}</strong>절: ${verses[verseNum]}</li>`;
   }
   html += "</ul>";
-  outputDiv.innerHTML = html;
+  outputDiv.innerHTML = `<div class="breathing-text">${html}</div>`;
 
   // 응원 메시지 출력
   const encouragementDiv = document.getElementById("encouragement");
