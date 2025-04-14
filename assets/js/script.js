@@ -63,6 +63,7 @@ html += `</div>`;
 
 
   outputDiv.innerHTML = `<div class="breathing-text">${html}</div>`;
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   // 응원 메시지 출력
   const encouragementDiv = document.getElementById("encouragement");
