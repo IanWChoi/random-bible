@@ -146,3 +146,37 @@ button {
 .breathing-text {
   animation: fadeInBreath 1.5s ease-out;
 }
+
+.nav-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+}
+
+.nav-left {
+  text-align: left;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-btn {
+  font-size: 13px;
+  padding: 6px 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #ddd;
+}
